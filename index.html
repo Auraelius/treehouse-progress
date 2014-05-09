@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Treehouse Progress</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <style> 
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 16px;
+        }
+        .container {
+            width: 940px;
+            margin: 0 auto; 
+        }
+
+        #example {
+            /*text-align: center;*/
+        }
+
+        header {
+            /*text-align: center;*/
+        }
+
+        button {
+            background: #494949;
+            border: none;
+            padding: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        a {
+            color: #e1e1e1;
+            text-decoration: none;
+            -webkit-transition: all .2s linear;
+            -moz-transition: all .2s linear;
+            -ms-transition: all .2s linear;
+            -o-transition: all .2s linear;
+            transition: all .2s linear;
+        }
+
+        a:hover {
+            opacity: .4;
+        }
+
+        code, pre {
+            background: #dddddd;
+            color: #5D4141;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            padding: 4px;
+        }
+
+        pre {
+            padding: 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: serif;
+            margin: 10px 0;
+            color: #494949;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 2.5em;
+        }
+
+        h3 {
+            font-size: 2em;
+        }
+
+        h4 {
+            font-size: 1.8em;
+        }
+
+        h5 {
+            font-size: 1.4em;
+        }
+        li {
+            margin: 8px 0;
+        }
+        p {
+            margin: 4px;
+        }
+    </style>
+  </head>
+  <body>
+
+    <header>
+        <h1>Treehouse Progress</h1>
+    </header>
+
+    <section id="example">
+      <h2>Front End Class</h2>
+        <div class="container">
+          <div id="richardchapman">
+            <h3>Richards: <b class="total"></b></h3><div class="charts"></div>
+          </div>
+          <div id="ceenan">
+            <h3>Ceenan: <b class="total"></b></h3><div class="charts"></div>
+          </div>
+          <div id="joshuapeters">
+            <h3>Josh: <b class="total"></b></h3><div class="charts"></div>
+          </div>
+          <div id="arcydouglass">
+            <h3>Arcy: <b class="total"></b></h3><div class="charts"></div>
+          </div>
+
+          <div id="michelekraus">
+            <h3>Michele: <b class="total"></b></h3><div class="charts"></div>
+          </div>
+          <div id="sethleamer">
+            <h3>Seth: <b class="total"></b></h3><div class="charts"></div>
+          </div>
+          <div id="mariotorres1985">
+            <h3>Mario: <b class="total"></b></h3><div class="charts"></div>
+          </div>
+          <div id="xandertaylor">
+            <h3>Xander: <b class="total"></b></h3><div class="charts"></div>
+          </div>
+
+        </div>  
+    </section>
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/circle.min.js"></script>
+    <script src="js/treehouse.js"></script>
+    <script>
+
+      $("#richardchapman .charts").treehouseCharts("richardchapman", 
+        {totalSelector: "#richardchapman .total", c1: "#b4da55", c2: "#eeeeee",  
+        exclude: ["Android", "iOS", "Ruby", "PHP", "Business", "Design", "forum"]}
+      );
+      $("#ceenan .charts").treehouseCharts("ceenan", 
+        {totalSelector: "#ceenan .total", c1: "#b4da55", c2: "#eeeeee",  
+        exclude: ["Android", "iOS", "Ruby", "PHP", "Business", "Design", "forum"]}
+      );
+      $("#arcydouglass .charts").treehouseCharts("arcydouglass", 
+        {totalSelector: "#arcydouglass .total", c1: "#b4da55", c2: "#eeeeee",  
+        exclude: ["Android", "iOS", "Ruby", "PHP", "Business", "Design", "forum"]}
+      );
+      $("#michelekraus .charts").treehouseCharts("michelekraus", 
+        {totalSelector: "#michelekraus .total", c1: "#b4da55", c2: "#eeeeee",  
+        exclude: ["Android", "iOS", "Ruby", "PHP", "Business", "Design", "forum"]}
+      );
+      $("#sethleamer .charts").treehouseCharts("sethleamer", 
+        {totalSelector: "#sethleamer .total", c1: "#b4da55", c2: "#eeeeee",  
+        exclude: ["Android", "iOS", "Ruby", "PHP", "Business", "Design", "forum"]}
+      );
+      $("#mariotorres1985 .charts").treehouseCharts("mariotorres1985", 
+        {totalSelector: "#mariotorres1985 .total", c1: "#b4da55", c2: "#eeeeee",  
+        exclude: ["Android", "iOS", "Ruby", "PHP", "Business", "Design", "forum"]}
+      );
+      $("#xandertaylor .charts").treehouseCharts("xandertaylor", 
+        {totalSelector: "#xandertaylor .total", c1: "#b4da55", c2: "#eeeeee",  
+        exclude: ["Android", "iOS", "Ruby", "PHP", "Business", "Design", "forum"]}
+      );
+      $("#joshuapeters .charts").treehouseCharts("joshuapeters", 
+        {totalSelector: "#joshuapeters .total", c1: "#b4da55", c2: "#eeeeee",  
+        exclude: ["Android", "iOS", "Ruby", "PHP", "Business", "Design", "forum"]}
+      );
+    </script>
+  </body>
+</html>
